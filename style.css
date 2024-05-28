@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 0; /* Sin margen externo */
+}
+
+/* Estilo del contenedor principal (container) */
+.container {
+    display: flex; /* Mostrar como flexbox */
+    background-color: #fff; /* Color de fondo */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    width: 80%; /* Ancho del 80% del contenedor padre */
+    max-width: 800px; /* Ancho máximo */
+    padding: 20px; /* Espaciado interior */
+}
+
+
+.left {
+    flex: 1; /* Ocupar todo el espacio disponible en la dirección principal */
+    padding: 20px; /* Espaciado interior */
+}
+
+/* Estilo de la sección derecha (right) */
+.right {
+    flex: 1; /* Ocupar todo el espacio disponible en la dirección principal */
+    padding: 20px; /* Espaciado interior */
+    background-color: #f5f5f5; /* Color de fondo */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+h1 {
+    text-align: center; 
+}
+
+/* Estilo de etiquetas, entradas y botones */
+label, input, button {
+    display: block; /* Mostrar elementos en bloques */
+    margin: 10px 0; /* Espaciado entre elementos */
+} 
+
+ul {
+    list-style-type: none; /* Sin viñetas en la lista */
+    padding: 0; 
+}
+
+li {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    align-items: center; /* Centrar verticalmente */
+    background-color: #fff; /* Color de fondo */
+    padding: 10px; /* Espaciado interior */
+    border: 1px solid #ccc; /* Borde con color */
+    border-radius: 5px; /* Borde redondeado */
+    margin: 5px 0; /* Espaciado entre elementos */
+}
+
+#listaJuegos {
+  max-height: 300px; /* Establece la altura máxima que prefieras */
+  overflow-y: auto; /* Habilita el desplazamiento vertical cuando se excede la altura */
+}
+
+#btnAgregarJuego
+{
+  background-color: green; /* Cambia el fondo a verde */
+  color: white; /* Cambia el color del texto a blanco */
+  border: none; /* Elimina el borde */
+  padding: 10px 20px; /* Ajusta el espaciado interior del botón */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+#btnEliminarJuego
+{
+  background-color: red; /* Cambia el fondo a rojo */
+  color: white; /* Cambia el color del texto a blanco */
+  border: none; /* Elimina el borde */
+  padding: 5px 10px; /* Ajusta el espaciado interior del botón */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+#btnEditarJuego
+{
+  background-color: limegreen; /* Cambia el fondo a rojo */
+  color: white; /* Cambia el color del texto a blanco */
+  border: none; /* Elimina el borde */
+  padding: 5px 10px; /* Ajusta el espaciado interior del botón */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.valor-invalido{
+  border: 2px solid red;
+}

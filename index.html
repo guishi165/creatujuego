@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crea tu juego!!!! (planificación)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <form id="formulario">
+            <h1>CREA TU JUEGO</h1>
+            <label>nombre:</label>
+            <input type="text" name="nombre" id="nombreJuego" placeholder="nombre">
+            <label>fecha (lanzamiento):</label>
+            <input type="date" name="fecha" id="fechaLanzamiento">
+            <label>edad recomendada:</label>
+            <select name="edad" id="edad">
+                <option value="3">PEGI 3</option>
+                <option value="7">PEGI 7</option>
+                <option value="12">PEGI 12</option>
+                <option value="16">PEGI 16</option>
+                <option value="18">PEGI 18</option>
+            </select>
+            <label>multijugador:</label>
+            <input type="checkbox" name="multijugador" id="multijugador">
+            <label>plataformas:</label>
+            <select name="plataformas" id="plataformas" multiple>
+                <option value=" Windows">Windows 10/11</option>
+                <option value=" macOS">macOS</option>
+                <option value=" Nintendo Switch">Nintendo Switch</option>
+                <option value=" PlayStation 4|5">PlayStation (4/5)</option>
+                <option value=" Xbox">Xbox</option>
+            </select>
+            <button type="submit" id="btnAgregarJuego">agregar juego!!!</button>
+            <button type="button" id="btnEliminarJuego" onclick="reiniciarForm()">reiniciar formulario D:</button>
+            </form>
+        </div>
+        <div class="right">
+            <h2>Lista de Juegos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>nombre</th>
+                        <th>lanzamiento</th>
+                        <th>edad</th>
+                        <th>multijugador</th>
+                        <th>plataformas</th>
+                        <th>acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="listaJuegos"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
