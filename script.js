@@ -55,13 +55,13 @@ function agregarJuego()
 function validarDatos(nombreJuego, fechaLanzamiento, edad, plataformas)
 //parametros son valores que reciben las funciones
 {
-   /*if (nombreJuego == "" || fechaLanzamiento == "" || edad == "" || plataformas == ""){
-        alert("pon algo idiota")
+   if (nombreJuego == "" || fechaLanzamiento == "" || edad == "" || plataformas == ""){
+        alert("pon algo, ¿no?")
         return false;
     }
     else{
         return true;
-    }*/
+    }
 
     let isValid = true;
 
@@ -89,7 +89,7 @@ function reiniciarForm(){
     document.getElementById("fechaLanzamiento").value = "";
     document.getElementById("edad").value = "";
     document.getElementById("multijugador").checked = false;
-    document.getElementById("btnAgregarJuego").innerText = "agregar juego!!!";
+    document.getElementById("btnAgregarJuego").innerText = "agregar juego :D";
     //document.getElementById("plataformas").selectedOptions.map(option => option.value = "");
 }
 
@@ -176,6 +176,5 @@ function editarJuego(index) {
         // Cambiar el texto del botón a "Guardar Cambios"
         document.getElementById("btnAgregarJuego").innerText = "guardar cambios";
         actualizarListaJuegos();
-
     }
 }
